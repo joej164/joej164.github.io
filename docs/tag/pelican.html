@@ -12,7 +12,7 @@
         <header id="banner" class="body">
                 <h1><a href="/">Joe's Blog and Notes</a></h1>
                 <nav><ul>
-                    <li class="active"><a href="/category/pelican.html">Pelican</a></li>
+                    <li><a href="/category/pelican.html">Pelican</a></li>
                     <li><a href="/category/personal-thoughts.html">Personal Thoughts</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
@@ -114,7 +114,12 @@ https://docs.getpelican.com/en/latest/content.html#file-metadata</p>
 <h1>Issue with the CSS and Styling</h1>
 <p>None of the CSS and Styling showed up.  I remembered I had set the site url parameter in the <code>pelicanconf.py</code> file.  I blanked that out and reloaded it, the CSS showed up.</p>
 <p>Now I need to figure out if theres a way to set the site URL differently when I'm deploying to prod vs deplying locally.  I'll probably see if I need to do that after I figure out how to build and deploy to github pages.</p>
-<h1></h1>                </article>
+<h1>Deploying - first attempt</h1>
+<p>Looking at the options, it appears I can tell github pages to lookin root or in a /docs folder, so I updated the <code>pelicanconf.py</code> file with the following</p>
+<div class="highlight"><pre><span></span><code>OUTPUT_PATH = &quot;docs&quot;
+</code></pre></div>
+
+<p>I also found the setting name from the <code>pelican --print-settings</code> command.</p>                </article>
             </aside><!-- /#featured -->
         <section id="extras" class="body">
                 <div class="blogroll">

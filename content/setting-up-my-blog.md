@@ -117,4 +117,12 @@ None of the CSS and Styling showed up.  I remembered I had set the site url para
 
 Now I need to figure out if theres a way to set the site URL differently when I'm deploying to prod vs deplying locally.  I'll probably see if I need to do that after I figure out how to build and deploy to github pages.
 
-# 
+# Deploying - first attempt
+Looking at the options, it appears I can tell github pages to lookin root or in a /docs folder, so I updated the `pelicanconf.py` file with the following
+
+```
+OUTPUT_PATH = "docs"
+```
+
+I also found the setting name from the `pelican --print-settings` command.
+

@@ -4,6 +4,7 @@ SITENAME = "Joe's Blog and Notes"
 SITEURL = ""
 
 PATH = "content"
+OUTPUT_PATH = "docs"
 
 THEME = "theme/notmyidea"
 
