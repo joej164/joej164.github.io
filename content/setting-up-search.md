@@ -56,6 +56,7 @@ Good news, it worked, bad news, if I had more than one static page, I'd have a s
 
 For now, I'm going to commit all the files and push and see what happens.
 
-
+# Results in Prod
+So it worked.  The `stork` binary must be installed on the Github Pages servers, so the search plugin is working.  I'll maybe create a static search page later, or maybe even a site map with search as there's a plugin for that.
 
 
