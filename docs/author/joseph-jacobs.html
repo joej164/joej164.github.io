@@ -17,16 +17,50 @@
                         <ul>
                                 <li><a href="/pages/about.html">About</a></li>
                                         <li><a
+                                                        href="/category/disc-golf.html">Disc Golf</a></li>
+                                        <li><a
                                                         href="/category/pelican.html">Pelican</a></li>
                                         <li><a
                                                         href="/category/personal-thoughts.html">Personal Thoughts</a></li>
+                                        <li><a
+                                                        href="/category/starlink.html">Starlink</a></li>
                         </ul>
                 </nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="/setting-up-my-search.html">Setting Up My Search</a></h1>
+                    <h1 class="entry-title"><a href="/starlink-operation-at-hagg-lake-disc-golf-course.html">Starlink Operation at Hagg Lake Disc Golf Course</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2023-06-04T00:00:00-07:00">
+                Published: Sun 04 June 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/joseph-jacobs.html">Joseph Jacobs</a>
+        </address>
+<p>In <a href="/category/starlink.html">Starlink</a>.</p>
+<p>tags: <a href="/tag/starlink.html">starlink</a> <a href="/tag/disc-golf.html">disc golf</a> </p>
+</footer><!-- /.post-info --><h1>Reason for visit</h1>
+<p>Wife wanted to go play disc golf today.  I wanted to see how Starlink worked at the disc golf course.</p>
+<h1>Details</h1>
+<p>Starlink worked pretty good from the parking lot of the Hagg Lake Disc Golf Course.</p>
+<p>Direction: 300 degrees
+Height: 6ft
+Mount: Top fo my minivan</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/setting-up-my-search.html" rel="bookmark"
+                           title="Permalink to Setting Up My Search">Setting Up My Search</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2023-06-03T00:00:00-07:00">
                 Published: Sat 03 June 2023
@@ -37,53 +71,16 @@
         </address>
 <p>In <a href="/category/pelican.html">Pelican</a>.</p>
 <p>tags: <a href="/tag/tutorial.html">Tutorial</a> <a href="/tag/instructions.html">Instructions</a> <a href="/tag/search.html">Search</a> <a href="/tag/pelican.html">Pelican</a> </p>
-</footer><!-- /.post-info --><h1>Overview</h1>
+</footer><!-- /.post-info -->                <h1>Overview</h1>
 <p>Curious if I can get the Pelican Search Plugin working.  I got it working on my demo site, but not sure if the required binary (stork) is installed in the Github Pages Server.</p>
 <h1>Articles</h1>
 <ul>
 <li>https://docs.getpelican.com/en/latest/plugins.html</li>
 <li>https://github.com/pelican-plugins/search</li>
-<li>https://stork-search.net/docs/install</li>
-</ul>
-<h1>Local Dev Environment Setup</h1>
-<p>This is the process to set up the Pelican Search plugin.</p>
-<h2>Local Binary</h2>
-<p>I started with the Stork Installation Instructions.</p>
-<p>For my local dev environment, I installed stork v1.6.0</p>
-<p>Since I installed it on Friday in the WSL Ubuntu VM on my box, I didn't need to reinstall it.</p>
-<p>One thing not mentioned, is the python library expectes to be able to run <code>stork</code> so I had to rename the downloaded binary to just <code>stork</code>.</p>
-<h2>Python Library</h2>
-<p>Rather than install <code>pelican-search</code> directly, I just added it to the requirements.txt file and reinstalled my requirements in the virtual environment.</p>
-<h2>Updating the templates</h2>
-<p>In article.html and pages.html, I have to wrap the <code>.content</code> jinja2 variables with a main html tag.
-https://github.com/pelican-plugins/search#stork-html-selector</p>
-<p>I did that now, specifically updated the following files:
-- theme/notmyidea/templates/article.html
-- theme/notmyidea/templates/page.html</p>
-<h2>Adding the Javascript Libraries</h2>
-<p>Some External libraries are needed, as well as a search bar is required.  For this I'm going the "easy" method and using the CDN to host these files.</p>
-<ul>
-<li>https://github.com/pelican-plugins/search#static-assets--option-1-use-cdn</li>
-</ul>
-<p>I updated the following files
-- theme/notmyidea/templates/base.html</p>
-<h2>Adding the Search Input Form</h2>
-<ul>
-<li>https://github.com/pelican-plugins/search#search-input-form</li>
-</ul>
-<p>I wasn't really sure where to put it, so I just put it in the page.html template.</p>
-<p>Likely I'll put it on another page if it actually works on Github Pages.</p>
-<h1>Results on my local dev environment</h1>
-<p>Initially I had issues, finally I stuck it in the <code>section</code> tag in the pages.html template.</p>
-<p>Good news, it worked, bad news, if I had more than one static page, I'd have a search field on every page.  I'll muck around with that later, if this works when I push to Github Pages.</p>
-<p>For now, I'm going to commit all the files and push and see what happens.</p>
-<h1>Results in Prod</h1>
-<p>So it worked.  The <code>stork</code> binary must be installed on the Github Pages servers, so the search plugin is working.  I'll maybe create a static search page later, or maybe even a site map with search as there's a plugin for that.</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+<li>https://stork-search …</li></ul>
+                <a class="readmore" href="/setting-up-my-search.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
