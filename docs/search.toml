@@ -1,0 +1,23 @@
+[input]
+html_selector = "main"
+base_directory = "/root/repos/joej164.github.io/docs"
+
+[[input.files]]
+path = "pages/about.html"
+url = "/pages/about.html"
+title = "About"
+
+[[input.files]]
+path = "setting-up-my-search.html"
+url = "/setting-up-my-search.html"
+title = "Setting Up My Search"
+
+[[input.files]]
+path = "setting-up-my-blog.html"
+url = "/setting-up-my-blog.html"
+title = "Setting Up My Blog"
+
+[[input.files]]
+path = "why-im-doing-this-blog.html"
+url = "/why-im-doing-this-blog.html"
+title = "Why I'm doing this Blog"

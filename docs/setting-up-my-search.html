@@ -6,8 +6,9 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="generator" content="Pelican" />
-        <title>Joe's Blog and Notes - Pelican</title>
+        <title>Setting Up My Search</title>
         <link rel="stylesheet" href="/theme/css/main.css" />
+<meta name="description" content="Overview Curious if I can get the Pelican Search Plugin working. I got it working on my demo site, but not sure if the required binary (stork) is..." />
 </head>
 
 <body id="index" class="home">
@@ -16,17 +17,22 @@
                 <nav>
                         <ul>
                                 <li><a href="/pages/about.html">About</a></li>
-                                        <li><a
+                                        <li class="active" ><a
                                                         href="/category/pelican.html">Pelican</a></li>
                                         <li><a
                                                         href="/category/personal-thoughts.html">Personal Thoughts</a></li>
                         </ul>
                 </nav>
         </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/setting-up-my-search.html" rel="bookmark" title="Permalink to Setting Up My Search">Setting Up My Search</a>
+      </h1>
+    </header>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/setting-up-my-search.html">Setting Up My Search</a></h1>
+    <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2023-06-03T00:00:00-07:00">
                 Published: Sat 03 June 2023
@@ -37,7 +43,8 @@
         </address>
 <p>In <a href="/category/pelican.html">Pelican</a>.</p>
 <p>tags: <a href="/tag/tutorial.html">Tutorial</a> <a href="/tag/instructions.html">Instructions</a> <a href="/tag/search.html">Search</a> <a href="/tag/pelican.html">Pelican</a> </p>
-</footer><!-- /.post-info --><h1>Overview</h1>
+</footer><!-- /.post-info -->      <main>
+        <h1>Overview</h1>
 <p>Curious if I can get the Pelican Search Plugin working.  I got it working on my demo site, but not sure if the required binary (stork) is installed in the Github Pages Server.</p>
 <h1>Articles</h1>
 <ul>
@@ -76,39 +83,12 @@ https://github.com/pelican-plugins/search#stork-html-selector</p>
 <h1>Results on my local dev environment</h1>
 <p>Initially I had issues, finally I stuck it in the <code>section</code> tag in the pages.html template.</p>
 <p>Good news, it worked, bad news, if I had more than one static page, I'd have a search field on every page.  I'll muck around with that later, if this works when I push to Github Pages.</p>
-<p>For now, I'm going to commit all the files and push and see what happens.</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+<p>For now, I'm going to commit all the files and push and see what happens.</p>
+      </main>
+    </div><!-- /.entry-content -->
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/setting-up-my-blog.html" rel="bookmark"
-                           title="Permalink to Setting Up My Blog">Setting Up My Blog</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2023-06-02T00:00:00-07:00">
-                Published: Fri 02 June 2023
-        </abbr>
-
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/joseph-jacobs.html">Joseph Jacobs</a>
-        </address>
-<p>In <a href="/category/pelican.html">Pelican</a>.</p>
-<p>tags: <a href="/tag/tutorial.html">Tutorial</a> <a href="/tag/instructions.html">Instructions</a> <a href="/tag/setup.html">Setup</a> <a href="/tag/pelican.html">Pelican</a> </p>
-</footer><!-- /.post-info -->                <h1>Overview</h1>
-<p>This is the steps I took to set up this Blog.</p>
-<h1>Read and evaluate options</h1>
-<p>First I had to research some static website generators.  I wanted to use a Static Site generator as I didn't really want to deal with the overhead and complexity of a database for storing …</p>
-                <a class="readmore" href="/setting-up-my-blog.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-                </section><!-- /#content -->
+  </article>
+</section>
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>links</h2>
