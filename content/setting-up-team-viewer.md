@@ -9,7 +9,7 @@ My sister needed some help connecting to a remote machine, this is what I did to
 # Create an account
 In order to use the software a free account is required.  The free tier allows remotely controlling up to 3 devices.
 
-- Navigate to the teamviewer website **https://www.teamviewer.com/en-us/**
+- Navigate to the teamviewer website [https://www.teamviewer.com/en-us/](https://www.teamviewer.com/en-us/)
 - Click **Sign in** on the upper right hand of the screen and select **Mangement Console**
 - On the Management Console screen, click the **Sign Up** button under the words *New to TeamViewer?*
 - Enter an email address, password, click the buttons and create a teamviewer account
@@ -23,7 +23,7 @@ Here's the software to be downloaded for each system
 
 ## URL
 The following URL is for the MS Windows OS.  If you're downloading for another OS, use the appropriate link on this page.
-https://www.teamviewer.com/en-us/download/windows/
+[https://www.teamviewer.com/en-us/download/windows/](https://www.teamviewer.com/en-us/download/windows/)
 
 For both the local and remote system, use the same software
 
