@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <link rel="stylesheet" href="https://files.stork-search.net/basic.css" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Setting up Team Viewer</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+<meta name="description" content="Overview My sister needed some help connecting to a remote machine, this is what I did to get team viewer set up Create an account In order to use..." />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Joe's Blog and Notes</a></h1>
+                <nav>
+                        <ul>
+                                <li><a href="/pages/about.html">About</a></li>
+                                        <li><a
+                                                        href="/category/disc-golf.html">Disc Golf</a></li>
+                                        <li class="active" ><a
+                                                        href="/category/misc.html">Misc</a></li>
+                                        <li><a
+                                                        href="/category/pelican.html">Pelican</a></li>
+                                        <li><a
+                                                        href="/category/personal-thoughts.html">Personal Thoughts</a></li>
+                                        <li><a
+                                                        href="/category/starlink.html">Starlink</a></li>
+                        </ul>
+                </nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/setting-up-team-viewer.html" rel="bookmark" title="Permalink to Setting up Team Viewer">Setting up Team Viewer</a>
+      </h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2023-06-07T00:00:00-07:00">
+                Published: Wed 07 June 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/joseph-jacobs.html">Joseph Jacobs</a>
+        </address>
+<p>In <a href="/category/misc.html">Misc</a>.</p>
+<p>tags: <a href="/tag/team-viewer.html">team viewer</a> <a href="/tag/remote-connection.html">remote connection</a> </p>
+</footer><!-- /.post-info -->      <main>
+        <h1>Overview</h1>
+<p>My sister needed some help connecting to a remote machine, this is what I did to get team viewer set up</p>
+<h1>Create an account</h1>
+<p>In order to use the software a free account is required.  The free tier allows remotely controlling up to 3 devices.</p>
+<ul>
+<li>Navigate to the teamviewer website <strong>https://www.teamviewer.com/en-us/</strong></li>
+<li>Click <strong>Sign in</strong> on the upper right hand of the screen and select <strong>Mangement Console</strong></li>
+<li>On the Management Console screen, click the <strong>Sign Up</strong> button under the words <em>New to TeamViewer?</em></li>
+<li>Enter an email address, password, click the buttons and create a teamviewer account</li>
+<li>Note this info as you'll need it later</li>
+<li>Finally navigate to your email account and confirm the account from the email you received.</li>
+</ul>
+<p>NOTE: If you have a google or microsoft account, you could use those instead.  If you did that though, if you get locked out of either account, you're also locked out of remotely accessing your team viewer account.</p>
+<h1>Software Download and Configuration</h1>
+<p>Here's the software to be downloaded for each system</p>
+<h2>URL</h2>
+<p>The following URL is for the MS Windows OS.  If you're downloading for another OS, use the appropriate link on this page.
+https://www.teamviewer.com/en-us/download/windows/</p>
+<p>For both the local and remote system, use the same software</p>
+<p><strong>TeamViewer Full Client - x86-64</strong></p>
+<p><strong>NOTE</strong>: This assumes both computers were built within the last 10 years and are using modern OS's</p>
+<h2>Controlling System Setup</h2>
+<h3>Installation</h3>
+<p>On the device that's going to connect to another computer, download the install file and double click on it.</p>
+<p>Select <strong>Default installation</strong> and click <strong>Accept-next</strong></p>
+<p><img alt="default welcome" src="images/teamviewer/teamviewer-welcome.jpg"></p>
+<p>You'll get a Windows pop up asking if you want to make changes to the system, click <strong>Accept</strong>.</p>
+<p>Click the check box to accept the EULA and DPA and then select <strong>Continue</strong></p>
+<p><img alt="accept eula" src="images/teamviewer/teamviewer-accept-eula.jpg"></p>
+<p>The software is set up on the main machine.
+<img alt="software login" src="images/teamviewer/teamviewer-ready-to-sign-in.jpg"></p>
+<h3>Software Login</h3>
+<p>You will be prompted to log into an account to be able do anything.  Log in with your account.
+<img alt="login screen" src="images/teamviewer/teamviewer-sign-in-page.jpg"></p>
+<h2>Controlled Device Software Install</h2>
+<p>This section covers how to install the software on the device you want to remotely manage.</p>
+<p>Download the same software you used on the client setup
+<strong>TeamViewer Full Client - x86-64</strong></p>
+<p>Next select <em>Install and set up unatteneded access to this device</em> and then select <strong>Accept-next</strong> to continue
+<img alt="unattended access selection" src="images/teamviewer/teamviewer-unattended-access.jpg"></p>
+<p>Select <strong>Yes</strong> to make changes at the Windows System prompt.</p>
+<p>Watch watch the software install.</p>
+<p><img alt="Watch software install" src="images/teamviewer/teamviewer-installing-files-unattended-setup.jpg"></p>
+<p>Click the checkbox and accept the EULA and then click <strong>Continue</strong> </p>
+<p><img alt="accept eula" src="images/teamviewer/teamviewer-accept-eula.jpg"></p>
+<p>Click the <strong>Sign In</strong> button and then enter your credentials</p>
+<p>Now you will be prompted that you need to check your email to confirm you trust this device.
+Go to your email account and click the link.</p>
+<p>Now go back to the client, click the <em>I've added the device to the trusted devices list</em> and click <strong>Sign In</strong>.
+<img alt="new device sign in" src="images/teamviewer/teamviewer-new-device-sign-in.jpg"></p>
+<h1>Set up remote management</h1>
+<p>The installer didn't actually set up the machine for remote control, so to actually set up the device to be remotely managed, follow the steps in this section.</p>
+<p>Click the second icon down from the top to bring up the devices screen
+<img alt="device screen" src="images/teamviewer/teamviewer-devices-page.jpg">
+Click <strong>Add Device</strong></p>
+<p>Click <em>Set up remote access on this device</em> and click <strong>Continue</strong>
+<img alt="Set up remote access" src="images/teamviewer/teamviewer-add-new-device.jpg"></p>
+<p>On the <em>Confirm device screen</em> click <strong>Continue</strong>
+<img alt="Confirm device" src="images/teamviewer/teamviewer-confirm-device.jpg"></p>
+<p>On the <em>Set up remote access</em> screen click <strong>Assign device to my account</strong>
+<img alt="set up again" src="images/teamviewer/teamviewer-assign-device-to-account.jpg"></p>
+<p>On the next screen click <strong>Start TeamViewer with System</strong> button.
+<img alt="start with system" src="images/teamviewer/teamviewer-start-with-system.jpg"></p>
+<p>NOTE: This will cause team viewer to start every time you log in.  If you're concerned about other people accessing the devcie, you may want to launch the software manually when you want to remotely access it.</p>
+<p>You finally end up with a Congratulations screen.</p>
+<p><img alt="congrats" src="images/teamviewer/teamviewer-congratulations.jpg"></p>
+      </main>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                                <li><a href="https://getpelican.com/">Pelican</a></li>
+                                <li><a href="https://www.python.org/">Python.org</a></li>
+                                <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                                <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                                <li><a href="#">You can add links in your config file</a></li>
+                                <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                        Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of
+                        <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a
+                                href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing
+                                Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+        <script src="https://files.stork-search.net/releases/v1.5.0/stork.js"></script>
+        <script>
+                stork.register("sitesearch", "/search-index.st");
+        </script>
+</body>
+
+</html>
