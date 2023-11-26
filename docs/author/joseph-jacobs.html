@@ -21,6 +21,8 @@
                                         <li><a
                                                         href="/category/misc.html">Misc</a></li>
                                         <li><a
+                                                        href="/category/nixos.html">NixOS</a></li>
+                                        <li><a
                                                         href="/category/pelican.html">Pelican</a></li>
                                         <li><a
                                                         href="/category/personal-thoughts.html">Personal Thoughts</a></li>
@@ -32,7 +34,72 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="/starlink-operation-at-stub-stewart-state-park.html">Starlink Operation at Stub Stewart State Park</a></h1>
+                    <h1 class="entry-title"><a href="/intro-to-nixos.html">Intro to NixOS</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2023-11-25T00:00:00-08:00">
+                Published: Sat 25 November 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/joseph-jacobs.html">Joseph Jacobs</a>
+        </address>
+<p>In <a href="/category/nixos.html">NixOS</a>.</p>
+<p>tags: <a href="/tag/tutorial.html">Tutorial</a> <a href="/tag/instructions.html">Instructions</a> <a href="/tag/setup.html">Setup</a> <a href="/tag/nixos.html">NixOS</a> </p>
+</footer><!-- /.post-info --><h1>Overview</h1>
+<p>This is a page where I can put my notes for a tutorial on how to use the NixOS Linux Distribution.</p>
+<p>This tutorial is going to use Virtual Box on a Windows PC.</p>
+<p>The goals of this tutorial are to:
+- Install NixOS in a Virtual Machine
+- Configure the VM using the <code>configuration.nix</code> file
+- Rebuild the OS with the added configurations</p>
+<h1>Install the OS</h1>
+<p>The easiest way to get NixOS up and running is to use the <a href="https://nixos.org/download#nixos-virtualbox">Virtual Box OVA</a> provided by the project.</p>
+<ul>
+<li>Make sure that <a href="https://www.virtualbox.org/">Virual Box</a> is installed on your system.</li>
+<li>Navigate to the <a href="https://nixos.org/download#nixos-virtualbox">NixOS Virtual Box OVA</a> </li>
+<li>Download the OVA file.  This may take awhile as the download is 2.4GB in size.</li>
+<li>Follow the instructions on the NixOS Virtual Box OVA page for importing the OVA into Virtual Box.</li>
+<li>Once imported you should have a VM with a name similar to <code>NixOS 23.05.4969.1216a5ba22a9 (x86_64-linux)</code></li>
+<li>Start the Virtual Machine.</li>
+</ul>
+<h1>Find the Config File</h1>
+<p>The <code>configuration.nix</code> file by default is found in the <code>/etc/nixos</code> folder.</p>
+<p>From the Virtual Box Terminal, log into the VM.  Username and password are in the download link above.</p>
+<p>From the Plasma Desktop, click on the folder icon on the toolbar to launch the Dolphin file manager.  Click on the <code>nixos</code> drive.  Then click on <code>etc</code> and then <code>nixos</code> and you should see a file labeled <code>configuration.nix</code>.</p>
+<h1>Modify the Config File</h1>
+<p>In order to modify the file, we need to use a text editor.  By default the only next editor installed is a command line tool called <code>nano</code>.</p>
+<p>Do the following:</p>
+<ul>
+<li>Right click on the <code>configuration.nix</code> file.</li>
+<li>Select <code>Open Terminal Here</code> to launch the <em>Konsole</em> terminal application.</li>
+<li>By default you should be in the <code>/etc/nixos</code> directory.</li>
+<li>Type the following <code>sudo nano configuration.nix</code> to launch nano text editor.</li>
+<li>Using the arrow keys, navigate to the bottom of the file and look for the line beginning with <code># time.timeZone</code>.</li>
+<li>Remove the <code>#</code> from that line and update the timezone to "America/Los_Angeles" or whichever timezone you wish from the <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">List of Timezones</a></li>
+<li>Once your the line looks something like <code>time.timeZone = "America/Los_Angeles";</code> you are read to save and exit.</li>
+<li>Type <em>Ctrl-O</em> to save the file and <em>Ctrl-X</em> to exit out of nano.</li>
+</ul>
+<p>NOTE: you have to use sudo becuase by default the file is read only and the <code>demo</code> user does not have permissions to read the file.</p>
+<h1>Rebuild NixOS</h1>
+<p>Once changes are made to your NixOS Configuration file, we now rebuild the OS using <a href="https://nixos.wiki/wiki/Nixos-rebuild">nixos-rebuild</a></p>
+<ul>
+<li>From the command prompt type <code>sudo nixos-rebuild switch</code>.</li>
+<li>Wait for the OS to command to finish (about 5 minutes) and then the timezone should be updated.</li>
+</ul>
+<p>NOTE:  you have to use sudo because the default demo user doesn't have permissions to edit the OS.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/starlink-operation-at-stub-stewart-state-park.html" rel="bookmark"
+                           title="Permalink to Starlink Operation at Stub Stewart State Park">Starlink Operation at Stub Stewart State Park</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2023-06-26T00:00:00-07:00">
                 Published: Mon 26 June 2023
@@ -43,19 +110,14 @@
         </address>
 <p>In <a href="/category/starlink.html">Starlink</a>.</p>
 <p>tags: <a href="/tag/starlink.html">starlink</a> <a href="/tag/camping.html">camping</a> </p>
-</footer><!-- /.post-info --><h1>Reason for visit</h1>
+</footer><!-- /.post-info -->                <h1>Reason for visit</h1>
 <p>Wife wanted to go camping in the tent while I was trying camping in my minivan.</p>
 <h1>Details</h1>
 <p>Starlink worked pretty good from our spot.  We were in space 53.  I can see where other areas in the campground would not be great though.
-One of the camp hosts also had starlink, but hadn't set it up properly, so was broadcasting the STARLINK ssid and it had no password.</p>
-<p>Direction: 315 degrees
-Height: 6ft
-Mount: Top fo my minivan</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+One of the camp …</p>
+                <a class="readmore" href="/starlink-operation-at-stub-stewart-state-park.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
